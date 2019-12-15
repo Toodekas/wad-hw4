@@ -8,7 +8,7 @@ Date.weekdayer = ['Sunday','Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday'
 
 describe('Header is rendered correctly', () => {
     // Now mount the component and you have the wrapper
-    const wrapper = mount(Header)
+    const wrapper = mount(Header);
 
     // Check that this component properly displays today's date
 
