@@ -9,12 +9,17 @@ describe('List is rendered correctly', () => {
     let testItem = new Item('Test item #1');
     let testItem2 = new Item('Test item #2');
     //const wrapper = mount(List);
+    const wrap= mount(List);
+
     const wrapper = mount(List, {
         propsData: {
             list: [testItem, testItem2]
         }
     });
-
+    it('Test task 1', () => {
+        expect(wrap.html()).toContain("Add your first Todo task");
+        expect(wrapper.contains("Add your first Todo task")).toBe(false);
+    });
 
 
     // Test to test when an item in the list is marked as done  item is updated correctly
